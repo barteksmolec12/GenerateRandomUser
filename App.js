@@ -3,23 +3,18 @@ import React from 'react';
 import './App.css';
 import Person from './Person'
 
-// 1) przygotowanie jsona --done
-// 2) pobranie go w didMount --done
-// 3) przygotowanie State --done
-// 4) Dodatkowy komponent z treścia
-// 4) w App zmapowac obiekt State
 
 class App extends React.Component
 {
   state=
   {
     users:[],
-    isLoaded:false,
+   
    
   
   } 
 
-  getUsers = () => //tutaj pobiore api
+  getUsers = () => 
   {
     console.log("GET_USERS dziala")
 
@@ -39,7 +34,7 @@ render()
     const item=this.state.users.map(item => (<Person key={item.login.uuid} title={item.name.title} name={item.name.first} email={item.email} img={item.picture.large}></Person>))
     
     console.log(this.state.users);
-    console.log(this.state.isLoaded)
+   
     console.log("RENDER")
     
     
