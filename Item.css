@@ -1,0 +1,23 @@
+div
+{
+    text-align: center;
+    color:black
+    
+}
+
+h2{
+    color:grey;
+}
+
+.example
+{
+    border-bottom: 2px solid gray;
+    padding: 10px;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+img{
+    border-radius: 10px;
+}
